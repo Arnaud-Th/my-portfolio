@@ -1,0 +1,130 @@
+* {
+    font-size: 16px;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+body {
+    padding:0 12rem;
+}
+
+h1 {
+    font-family: 'Noto Sans Thai', 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Abhaya Libre', 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.banner {
+    text-align: center;
+}
+
+.sub-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-banner p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.sub-banner a {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+li {
+    display: inline;
+}
+
+#about-me {
+    padding: 0 1.5rem;
+    margin-top: 3rem;
+}
+
+.about-me-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#selfie {
+   height: 15rem;
+   width: 15rem;
+   float: right;
+   margin-right: 2rem;
+}
+
+#projects {
+    padding: 0 1.5rem;
+    margin-top: 5rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: rgb(200, 194, 194);
+    border-radius: 10px;
+}
+
+.card img {
+    width:14rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#skills {
+    padding: 0 1.5rem;
+    margin-top: 6rem;
+}
+
+.icons-container {
+    display: flex;
+    gap: 4rem;
+}
+
+.icons-container img{
+    height: 3rem;
+}
+
+footer {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.scrolltop {
+    transition: opacity 0.15s;
+    position: fixed;
+    right: 8rem;
+    bottom: 3rem;
+    background-color: rgb(196, 190, 190);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.scrolltop img {
+    width: 100%;
+}
+
+.scrolltop.visible {
+    opacity: 1;
+    pointer-events: all;
+}
