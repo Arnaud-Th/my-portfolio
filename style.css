@@ -5,6 +5,7 @@
 
 body {
     padding:0 12rem;
+    background-color: #f0e6de;
 }
 
 h1 {
@@ -22,6 +23,10 @@ h2 {
     text-decoration: underline;
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 .banner {
     text-align: center;
 }
@@ -30,6 +35,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 3px rgb(38, 38, 38) solid;
 }
 
 .sub-banner p {
@@ -40,7 +46,8 @@ h2 {
 
 .sub-banner a {
     font-size: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 1.25rem;
+    color: black;
 }
 
 li {
@@ -49,7 +56,7 @@ li {
 
 #about-me {
     padding: 0 1.5rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .about-me-content {
@@ -58,26 +65,84 @@ li {
     align-content: center;
 }
 
+.about-me-text {
+    margin: auto 0;
+}
+
 #selfie {
-   height: 15rem;
-   width: 15rem;
+   height: 22rem;
+   width: 20rem;
    float: right;
    margin-right: 2rem;
 }
 
 #projects {
     padding: 0 1.5rem;
-    margin-top: 5rem;
+    margin-top: 7rem;
+}
+
+.whole-card-container{
+    display: flex;
+}
+
+.whole-card {
+    position: absolute;
+    top: 35rem;
+    left: 20rem;
+    width: 55%;
+    background-color: rgb(243, 237, 237);
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#whole-card-one {
+    display: none;
+}
+
+#whole-card-two {
+    display: none;
+}
+
+#whole-card-three {
+    display: none;
+}
+
+.whole-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.whole-card h3 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.whole-card .chip-container {
+    margin-bottom: 2rem;
+}
+
+.whole-card p {
+    padding-left: 1rem;
 }
 
 .card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .card {
-    background-color: rgb(200, 194, 194);
+    cursor: pointer;
+    background-color: rgb(243, 237, 237);
     border-radius: 10px;
+    border: 2px solid black;
+}
+
+.card h3 {
+    text-align: center;
 }
 
 .card img {
@@ -86,9 +151,29 @@ li {
     border-top-right-radius: 10px;
 }
 
+.card p {
+    margin-left: 0.5rem;
+}
+
+.chip-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.chip {
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 700;
+    background-color: rgb(212, 67, 67);
+    padding: 0.25rem .8rem;
+    border-radius: 15px;
+}
+
 #skills {
     padding: 0 1.5rem;
-    margin-top: 6rem;
+    margin-top: 6.5rem;
 }
 
 .icons-container {
@@ -108,11 +193,11 @@ footer {
 .scrolltop {
     transition: opacity 0.15s;
     position: fixed;
-    right: 8rem;
+    right: 3rem;
     bottom: 3rem;
     background-color: rgb(196, 190, 190);
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 10px;
     border: 0;
     opacity: 0;
@@ -127,4 +212,13 @@ footer {
 .scrolltop.visible {
     opacity: 1;
     pointer-events: all;
+}
+
+#contact {
+    margin-top: 3rem;
+}
+
+.contact-ways {
+    margin-top: 3rem;
+    margin-left: 2rem;
 }

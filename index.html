@@ -4,7 +4,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Noto+Sans+Thai:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Noto+Sans+Thai:wght@700&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +24,10 @@
             <p>Arnaud Theard</p>
             <nav>
                 <ul class="links">
-                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#about-me">About-Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,9 +39,11 @@
             <div class="about-me-text">
                 <p>Hello, my name is Arnaud. I'm 28 years old, I'm from France.</p>
                 <p>Welcome to my PortFolio !</p>
+                <br>
                 <p>I am learning code on Codecademy.com since March 2023.</p>
                 <p>My goal is to become a front-end engineer.</p>
-                <p>I hope you will enjoy this website I made.</p>
+                <br>
+                <p>I hope you will enjoy your visit.</p>
             </div>
             <img id="selfie" src="./media/selfie1.jpg" alt="me">
         </div>
@@ -47,19 +51,20 @@
 
     <div id="projects">
         <h2>Projects</h2>
-        <div class="card-container">
-            <div class="card">
+        <div class="whole-card-container">
+            <div class="whole-card" id="whole-card-one">
                 <img src="./media/HTML-tab.jpg" alt="html-tab">
-                <div>
+                <div class="card-description">
                     <h3>HTML Cheatsheet</h3>
                     <div class="chip-container">
                         <span class="chip">HTML</span>
                         <span class="chip">CSS</span>
                     </div>
-                    <p>This project was made .....</p>
+                    <p>This project was made using HTML 'Table' functionalities, and CSS to add color on this table.</p>
+                    <p>The goal of this project is to make an HTML cheatsheet. That is my first project.</p>
                 </div>
-            </div>
-            <div class="card">
+            </div> 
+            <div class="whole-card" id="whole-card-two">
                 <img src="./media/Metal-new.jpg" alt="metal-new">
                 <div>
                     <h3>Company Home Page</h3>
@@ -67,10 +72,11 @@
                         <span class="chip">HTML</span>
                         <span class="chip">CSS</span>
                     </div>
-                    <p>This project was made.....</p>
+                    <p>This project was made using HTML, CSS, and CSS 'flex-box' properties.</p>
+                    <p>The main goal of this project is to manipulate CSS 'flex-box' to arrange the elements in an orderly and visible way.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="whole-card" id="whole-card-three">
                 <img src="./media/Rugby-club.jpg" alt="rugby-club">
                 <div>
                     <h3>Responsive Website</h3>
@@ -78,7 +84,43 @@
                         <span class="chip">HTML</span>
                         <span class="chip">CSS</span>
                     </div>
-                    <p>This project was made.....</p>
+                    <p>This project was made using HTML, CSS, and CSS responsive functionalities.</p>
+                    <p>The goal of this project is to make a club's responsive website. I used the CSS media query selector to display the content clearly on all devices.</p>
+                </div>
+            </div>  
+        </div>
+        <div class="card-container">
+            <div class="card" id="card-one">
+                <img src="./media/HTML-tab.jpg" alt="html-tab">
+                <div>
+                    <h3>HTML Cheatsheet</h3>
+                    <div class="chip-container">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                    </div>
+                    <p>This project was made...</p>
+                </div>
+            </div>
+            <div class="card" id="card-two">
+                <img src="./media/Metal-new.jpg" alt="metal-new">
+                <div>
+                    <h3>Company Home Page</h3>
+                    <div class="chip-container">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                    </div>
+                    <p>This project was made...</p>
+                </div>
+            </div>
+            <div class="card" id="card-three">
+                <img src="./media/Rugby-club.jpg" alt="rugby-club">
+                <div>
+                    <h3>Responsive Website</h3>
+                    <div class="chip-container">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                    </div>
+                    <p>This project was made...</p>
                 </div>
             </div>
         </div>
