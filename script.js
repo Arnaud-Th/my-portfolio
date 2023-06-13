@@ -1,10 +1,9 @@
 
-/* Arrow functions */
+/* Scroll to top functions */
 
 const arrowTop = document.querySelector(".scrolltop");
 
 const handleScrollPage = (event) => {
-    console.log(event)
     const scrollTop = event.target.scrollingElement.scrollTop
     if (scrollTop > 0) {
         arrowTop.classList.add("visible")
